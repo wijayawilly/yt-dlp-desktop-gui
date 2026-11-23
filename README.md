@@ -1,6 +1,6 @@
 # YT-DLP Custom UI (MP4 Video Downloader)
 
-A lightweight, portable Windows desktop GUI built with **CustomTkinter** that wraps `yt-dlp` and `ffmpeg` to fetch video metadata, download streams, and convert/remux them into `.mp4` files with live progress tracking and local library management[cite: 7].
+A lightweight, portable Windows desktop GUI built with **CustomTkinter** that wraps `yt-dlp` and `ffmpeg` to fetch video metadata, download streams, and convert/remux them into `.mp4` files with live progress tracking and local library management.
 
 > [!IMPORTANT]
 > **Required External Executables (`yt-dlp.exe` & FFmpeg Essentials)**
@@ -13,9 +13,6 @@ A lightweight, portable Windows desktop GUI built with **CustomTkinter** that wr
 - [Features](#features)
 - [Where to Download Required Files](#where-to-download-required-files)
 - [Folder Setup (Portable Mode)](#folder-setup-portable-mode)
-- [Quick Start for `.exe` Users (GitHub Releases)](#quick-start-for-exe-users-github-releases)
-- [Running from Python Source](#running-from-python-source)
-- [Building the Standalone `.exe`](#building-the-standalone-exe)
 - [Project Structure](#project-structure)
 - [Acknowledgements & Citations](#acknowledgements--citations)
 - [Disclaimer](#disclaimer)
@@ -24,13 +21,13 @@ A lightweight, portable Windows desktop GUI built with **CustomTkinter** that wr
 
 ## Features
 
-- **Automatic Metadata Preview:** Validates video URLs and automatically fetches the video title, resolution, duration, and estimated file size before downloading[cite: 7].
-- **Custom Output Folder & Naming:** Pick a destination folder with a built-in folder validation warning, and optionally rename the output file before saving[cite: 7].
+- **Automatic Metadata Preview:** Validates video URLs and automatically fetches the video title, resolution, duration, and estimated file size before downloading.
+- **Custom Output Folder & Naming:** Pick a destination folder with a built-in folder validation warning, and optionally rename the output file before saving.
 - **Duplicate File Protection:** Prompts for confirmation before overwriting an existing `.mp4` file with the same name.
-- **Live Download Progress:** Smooth progress bar with real-time percentage, download speed, downloaded/total size, estimated remaining time, FFmpeg merging status, and elapsed timer[cite: 7].
-- **Local MP4 Library Tab:** View all `.mp4` files in your selected folder along with total file count and combined storage size[cite: 7].
-- **Dark & Light Themes:** Toggle between Dark and Light modes from the top bar[cite: 7].
-- **Portable Binary Detection:** Automatically locates `yt-dlp.exe` and `ffmpeg.exe` in the application folder first, then falls back to your system `PATH`[cite: 7].
+- **Live Download Progress:** Smooth progress bar with real-time percentage, download speed, downloaded/total size, estimated remaining time, FFmpeg merging status, and elapsed timer.
+- **Local MP4 Library Tab:** View all `.mp4` files in your selected folder along with total file count and combined storage size.
+- **Dark & Light Themes:** Toggle between Dark and Light modes directly from the top bar.
+- **Portable Binary Detection:** Automatically locates `yt-dlp.exe` and `ffmpeg.exe` in the application folder first, then falls back to your system `PATH`.
 
 ---
 
@@ -60,3 +57,37 @@ Your_App_Folder/
 ├── ffmpeg.exe            # Required: extracted from FFmpeg essentials bin/
 ├── ffprobe.exe           # Essential FFmpeg media analyzer (from FFmpeg essentials bin/)
 └── ffplay.exe            # Essential FFmpeg media player (from FFmpeg essentials bin/)
+```
+
+---
+
+## Project Structure
+
+```text
+Custom_UI_YTDLP/
+├── yt-dlp_custom_ui.py   # Main GUI application source code
+├── icon.ico              # Custom application & window icon
+├── .gitignore            # Excludes build/dist/cache folders from Git
+└── README.md             # Project documentation
+```
+
+---
+
+## Acknowledgements & Citations
+
+Full credit and respect go to the open-source developers and maintainers whose tools make this project possible:
+
+- **yt-dlp Contributors** — *yt-dlp: A feature-rich command-line audio/video downloader.*  
+  Repository & Releases: [https://github.com/yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp)
+- **FFmpeg Developers** — *FFmpeg: A complete, cross-platform solution to record, convert and stream audio and video.*  
+  Official Project: [https://ffmpeg.org/](https://ffmpeg.org/)
+- **Gyan Doshi (CODEX FFMPEG)** — *Windows Release & Essentials Builds for FFmpeg.*  
+  Builds Page: [https://www.gyan.dev/ffmpeg/builds/](https://www.gyan.dev/ffmpeg/builds/)
+- **Tom Schimansky** — *CustomTkinter: A modern and customizable Python UI-library based on Tkinter.*  
+  Repository: [https://github.com/TomSchimansky/CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)
+
+---
+
+## Disclaimer
+
+This application is intended solely for downloading content you own or have explicit permission to save (such as personal videos, Creative Commons works, or public domain media). Please respect copyright laws and the terms of service of any website you use.
