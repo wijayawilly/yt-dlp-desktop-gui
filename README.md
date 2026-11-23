@@ -34,7 +34,7 @@ A lightweight, portable Windows desktop GUI built with **CustomTkinter** that wr
 
 ## Step-by-Step Setup Guide
 
-1. **Download the `.exe`:** [Download ytdlp_cutom_ui.exe from GitHub Releases](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/releases/latest) and save it into a dedicated folder (for example, `YT-DLP Custom UI`).
+1. **Download the `.exe`:** [Download ytdlp_cutom_ui.exe from GitHub Releases](https://github.com/wijayawilly/yt-dlp-desktop-gui/releases/latest) and save it into a dedicated folder.
 2. **Download `yt-dlp`:** Visit [yt-dlp Official GitHub Releases](https://github.com/yt-dlp/yt-dlp/releases) and download **`yt-dlp.exe`** from the latest release assets.
 3. **Download FFmpeg:** Visit [gyan.dev FFmpeg Builds](https://www.gyan.dev/ffmpeg/builds/) (linked via [FFmpeg Official Downloads](https://ffmpeg.org/download.html)) and download the **essentials** build (`ffmpeg-release-essentials.zip` or `ffmpeg-release-essentials.7z`).
 4. **Extract and place all files in the same folder:** Extract the FFmpeg archive, open its **`bin/`** folder, and move **`ffmpeg.exe`**, **`ffprobe.exe`**, and **`ffplay.exe`**—along with **`yt-dlp.exe`**—into the same folder as **`ytdlp_cutom_ui.exe`** (or add them to your Windows `PATH`).
