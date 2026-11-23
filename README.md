@@ -11,6 +11,7 @@ A lightweight, portable Windows desktop GUI built with **CustomTkinter** that wr
 ## Table of Contents
 
 - [Features](#features)
+- [Step-by-Step Setup Guide](#step-by-step-setup-guide)
 - [Where to Download Required Files](#where-to-download-required-files)
 - [Folder Setup (Portable Mode)](#folder-setup-portable-mode)
 - [Project Structure](#project-structure)
@@ -31,15 +32,28 @@ A lightweight, portable Windows desktop GUI built with **CustomTkinter** that wr
 
 ---
 
+## Step-by-Step Setup Guide
+
+1. **Download the `.exe`:** [Download ytdlp_cutom_ui.exe from GitHub Releases](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/releases/latest) and save it into a dedicated folder (for example, `YT-DLP Custom UI`).
+2. **Download `yt-dlp`:** Visit [yt-dlp Official GitHub Releases](https://github.com/yt-dlp/yt-dlp/releases) and download **`yt-dlp.exe`** from the latest release assets.
+3. **Download FFmpeg:** Visit [gyan.dev FFmpeg Builds](https://www.gyan.dev/ffmpeg/builds/) (linked via [FFmpeg Official Downloads](https://ffmpeg.org/download.html)) and download the **essentials** build (`ffmpeg-release-essentials.zip` or `ffmpeg-release-essentials.7z`).
+4. **Extract and place all files in the same folder:** Extract the FFmpeg archive, open its **`bin/`** folder, and move **`ffmpeg.exe`**, **`ffprobe.exe`**, and **`ffplay.exe`**—along with **`yt-dlp.exe`**—into the same folder as **`ytdlp_cutom_ui.exe`** (or add them to your Windows `PATH`).
+5. **Launch and download:** Double-click **`ytdlp_cutom_ui.exe`**, choose your output folder, paste a valid video URL to preview metadata, and click **Download MP4**.
+
+---
+
 ## Where to Download Required Files
 
-Download these official upstream tools before running the application:
+Download these required files before running the application:
 
-1. **`yt-dlp` (`yt-dlp.exe`)**
+1. **Application Executable (`ytdlp_cutom_ui.exe`)**
+   - **Download Link:** [Download ytdlp_cutom_ui.exe (Latest Release)](https://github.com/wijayawilly/yt-dlp-desktop-gui/releases/latest) *(or direct asset link once tagged: `https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/releases/download/v1.0.0/ytdlp_cutom_ui.exe`)*
+
+2. **`yt-dlp` (`yt-dlp.exe`)**
    - **Download Link:** [yt-dlp Official GitHub Releases](https://github.com/yt-dlp/yt-dlp/releases)
    - **Instructions:** Scroll to the **Assets** section of the latest release, download **`yt-dlp.exe`**, and place it in the same folder as this application (or in a folder on your Windows `PATH`).
 
-2. **FFmpeg Essentials (`ffmpeg.exe`, `ffprobe.exe`, `ffplay.exe`)**
+3. **FFmpeg Essentials (`ffmpeg.exe`, `ffprobe.exe`, `ffplay.exe`)**
    - **Official FFmpeg Website:** [FFmpeg Official Downloads](https://ffmpeg.org/download.html)
    - **Windows Essentials Builds (Gyan Doshi / CODEX FFMPEG):** [gyan.dev FFmpeg Builds](https://www.gyan.dev/ffmpeg/builds/)
    - **Instructions:** Download **`ffmpeg-release-essentials.zip`** (or `.7z`), extract the archive, open the **`bin/`** subfolder, and copy **`ffmpeg.exe`**, **`ffprobe.exe`**, and **`ffplay.exe`** into the same folder as `ytdlp_cutom_ui.exe` (or add that `bin/` folder to your Windows `PATH`).
